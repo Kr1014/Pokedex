@@ -1,0 +1,250 @@
+.div_red_pokedex{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    top: 0px;
+    background-color: red;
+}
+.div_black_pokedex{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 70px;
+    background-color: black;
+}
+
+.circle_father_pokedex{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.circle_1_pokedex{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    margin-right: 120px;
+}
+
+.circle_2_pokedex{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 5;
+    position: absolute;
+    top: 65px;
+    margin-right: 135px;
+}
+
+.circle_3_pokedex{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 10;
+    position: absolute;
+    top: 75px;
+    margin-right: 145px;
+}
+
+.Poke_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+}
+
+.welcome_trainer{
+    color: red;
+}
+
+.welcome_pokedex{
+    font-size: 1.5rem;
+}
+
+.buttom_pokemon_name{
+    padding: 10px 50px;
+    background-color: red;
+    color: white;
+}
+
+.pokemon_name{
+    width: 200px;
+    padding: 10px  
+}
+
+.search_pokemon{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.select_pokemons{
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.Poke_card{
+    width: 240px;
+    height: 340px;
+    border: 7px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    gap: 5px;
+    position: relative;
+    background: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.content_cards{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.Poke_card:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.img_poke_card{
+    z-index: 10;
+    margin-top: -20px;
+}
+
+.poke_name{
+    font-size: 1.5rem;
+}
+
+.slot1, .slot2{
+    font-size: 1.1rem;
+}
+
+.slot2::before{
+    content: '/';
+}
+
+.list_poke_type{
+    display: flex;
+}
+
+.stats{
+    color: red;
+}
+
+.list_poke_stats{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    border-top: 2px solid grey;
+}
+
+.list_poke_stats li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Poke_card div{
+    width: 228px;
+    height: 110px;
+    border-radius: 6px 6px 6px 6px;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+.grass{
+    background-color: rgb(15, 185, 15);
+}
+
+.fire{
+    background-color: orangered;
+}
+
+.water{
+    background-color: dodgerblue;
+}
+
+.bug{
+    background-color: green;
+}
+
+.electric{
+    background-color: yellow;
+}
+
+.normal{
+    background-color: grey;
+}
+
+.fighting{
+    background-color: antiquewhite;
+}
+
+.poison{
+    background-color: purple;
+}
+
+.ghost{
+    background-color: black;
+}
+
+.dragon{
+    background-color: red;
+}
+
+.dark{
+    background-color: rgb(21, 2, 75);
+}
+
+.steel{
+    background-color: rgb(220, 248, 248);
+}
+
+.rock{
+    background-color: rgb(85, 134, 118);
+}
+
+.psychic{
+    background-color: blue;
+}
+
+.ice{
+    background-color: skyblue;
+}
+
+.fairy{
+    background-color: rgb(233, 177, 177);
+}
+
+.ground{
+    background-color: rgb(172, 172, 133);
+}
+
+.container_buttom{
+    display: flex;
+    justify-content: center;
+}
+
+.buttom_next, .buttom_prev{
+    color: black;
+    background-color: rgba(255, 0, 0, 0.897);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
